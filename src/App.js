@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import Pokedex from './Pokedex';
+import Pokegame from './Pokegame';
 
 
 /**Renders the Pokedex component with list of pokemons*/
@@ -8,8 +9,8 @@ import Pokedex from './Pokedex';
 function App() {
   return (
     <div className="App">
-      <h1>Pokedex</h1>
-      <Pokedex/>
+
+      <Pokegame />
     </div>
   );
 }

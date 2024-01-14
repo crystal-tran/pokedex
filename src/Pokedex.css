@@ -5,3 +5,7 @@
   flex-direction: row;
   width: 100%
 }
+
+.Pokedex h1, h2 {
+  display: block;
+}

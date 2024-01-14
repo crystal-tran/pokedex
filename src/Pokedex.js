@@ -21,9 +21,11 @@ const POKEMON_LIST = [
  *
  */
 
-function Pokedex({ pokemon=POKEMON_LIST }) {
+function Pokedex({ pokemon=POKEMON_LIST, totalExp }) {
   return (
     <div className="Pokedex">
+      <h1>Pokedex</h1>
+      <h2>Total Exp: { totalExp }</h2>
       {pokemon.map(({name, id, type, base_experience}) =>
         <Pokecard
           name={name}
