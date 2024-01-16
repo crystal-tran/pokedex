@@ -27,8 +27,8 @@ function Pokegame( { pokemon=POKEMON_LIST }){
   const secondHandExp = getExpSum(secondHand);
 
   return <div>
-    <Pokedex pokemon={ firstHand } totalExp={ firstHandExp } />
-    <Pokedex pokemon={ secondHand } totalExp={ secondHandExp } />
+    <Pokedex pokemon={ firstHand } totalExp={ firstHandExp } isWinner={firstHandExp > secondHandExp}/>
+    <Pokedex pokemon={ secondHand } totalExp={ secondHandExp } isWinner={firstHandExp < secondHandExp} />
   </div>
 }
 

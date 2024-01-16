@@ -21,11 +21,13 @@ const POKEMON_LIST = [
  *
  */
 
-function Pokedex({ pokemon=POKEMON_LIST, totalExp }) {
+function Pokedex({ pokemon=POKEMON_LIST, totalExp, isWinner }) {
   return (
     <div className="Pokedex">
+      <div className="Pokedex-header">
       <h1>Pokedex</h1>
       <h2>Total Exp: { totalExp }</h2>
+      </div>
       {pokemon.map(({name, id, type, base_experience}) =>
         <Pokecard
           name={name}
@@ -34,6 +36,9 @@ function Pokedex({ pokemon=POKEMON_LIST, totalExp }) {
           base_experience={base_experience} />
       )
       }
+      <div className="Pokedex-winner">
+        <p>{isWinner ? "THIS HANDS WIN" : ""}</p>
+      </div>
     </div>
   );
 }

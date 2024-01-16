@@ -9,3 +9,14 @@
 .Pokedex h1, h2 {
   display: block;
 }
+
+.Pokedex-header {
+  width: 100%;
+}
+
+.Pokedex-winner {
+  width: 100%;
+  color: red;
+  font-size: large;
+  font-weight: bold;
+}
