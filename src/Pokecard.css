@@ -2,10 +2,11 @@
   background-color: lightgrey;
   border-radius: 30px;
   width: 20%;
-  display: inline-block;
-  margin: 10px;
+  margin: 35px;
+
 }
 
-.Pokecard h1{
+.Pokecard h2{
   color: blue;
+  font-size: 20px;
 }

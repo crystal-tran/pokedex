@@ -1,7 +1,13 @@
 .App {
   text-align: center;
+  align-items: center;
+  align-content: center;
 }
 
+.App > h1 {
+  color: gray;
+  display: block;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
